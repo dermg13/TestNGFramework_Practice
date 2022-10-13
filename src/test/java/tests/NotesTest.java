@@ -11,8 +11,7 @@ public class NotesTest extends BaseTest {
     private NotesPage page;
 
     @BeforeMethod(alwaysRun = true)
-    public void setUp(){
-        super.setUp();
+    public void setUpDriver(){
         driver.findElement(By.xpath("//nav/a[text()='Notes']")).click();
         page = new NotesPage(driver);
     }
