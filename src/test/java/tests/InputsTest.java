@@ -21,7 +21,7 @@ public class InputsTest extends BaseTest {
     public void test01 (){
 
         //failed on purpose to see screenshot
-        Assert.assertEquals(driver.getTitle(), "TLA");
+        Assert.assertEquals(driver.getTitle(), "TLA Automation");
     }
 
     @Test (testName = "Verify message is displayed", description = "message input should be shown")
@@ -31,7 +31,7 @@ public class InputsTest extends BaseTest {
         //click on show message button
         page.showMessageBtn.click();
         //verify message is displayed
-        Assert.assertEquals(page.displayedMessage.getText(), "hello");
+        Assert.assertEquals(page.displayedMessage.getText(), "helloo");
 
     }
 }
